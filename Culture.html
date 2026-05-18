@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ink &amp; Evolution - Culture</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#2b2d2c',
+              primary: '#a2a19b',
+              heading: '#b3b0a8'
+            },
+            fontFamily: {
+              serif: ['"DM Serif Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <style data-purpose="custom-styles">
+      body {
+        background-color: #2b2d2c;
+        color: #a2a19b;
+      }
+      h1, h2, h3 {
+        color: #b3b0a8;
+      }
+      
+      .content-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .nav-link {
+        transition: color 0.2s ease-in-out;
+      }
+      .nav-link:hover {
+        color: #e5e5e5;
+      }
+      .nav-link.active {
+        border-bottom: 1px solid #a2a19b;
+        padding-bottom: 2px;
+      }
+      
+      .bullet-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .bullet-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #a2a19b;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased min-h-screen flex flex-col">
+  <!-- BEGIN: MainHeader -->
+  <header class="w-full px-8 py-10 flex justify-between items-center" data-purpose="main-header">
+  <div class="logo">
+  <a class="font-serif text-3xl font-bold tracking-tight text-heading hover:opacity-80 transition-opacity" href="#">Ink &amp; Evolution</a>
+  </div>
+  <nav data-purpose="main-navigation">
+  <ul class="flex space-x-8 text-sm font-medium">
+  <li><a class="nav-link" href="index.html">Home</a></li>
+  <li><a class="nav-link" href="Evolution.html">Evolution</a></li>
+  <li><a class="nav-link active" href="Culture.html">Culture</a></li>
+  <li><a class="nav-link" href="Credits.html">Credits</a></li>
+  </ul>
+  </nav>
+  </header>
+  <!-- END: MainHeader -->
+  <!-- BEGIN: MainContent -->
+  <main class="flex-grow w-full px-8 py-16" data-purpose="main-content">
+  <article class="content-wrapper">
+  <!-- Page Title Section -->
+  <section class="mb-16" data-purpose="page-title-section">
+  <h1 class="font-serif text-5xl md:text-6xl leading-tight mb-8">The Culture of Tattoos: Identity,<br>Art, and Society</h1>
+  <p class="text-base md:text-lg leading-relaxed mb-6">Humans have decorated their bodies for religious and cultural purposes for over thousands of years. From ancient rituals to modern self-expression, tattoos are a part of many cultures around the world.</p>
+  </section>
+  <!-- Deep Roots Section -->
+  <section class="mb-20" data-purpose="deep-roots-section">
+  <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8">Deep Roots in Oceania and Maori<br>Traditions</h2>
+  <p class="text-base md:text-lg leading-relaxed mb-6">While the earliest recorded tattoo is from ancient Egypt , the practice holds incredibly deep cultural roots in the Pacific, dating back to the initial migration and colonization of the region.</p>
+  <ul class="bullet-list text-base md:text-lg leading-relaxed">
+  <li><strong>The Body as a Canvas:</strong> Oceania is a warm climate place where people wear few clothing and consider themselves blank canvases for decoration.</li>
+  <li><strong>Celebration of Self:</strong> Tattooing is highly celebrated in their culture and is very important to them. They view tattoos as a way of admiring their body and celebrating who they are.</li>
+  <li><strong>Social Status:</strong> In these cultures, a tattoo can also represent your place and class in society.</li>
+  <li><strong>Maori Warriors:</strong> In Aotearoa, Maori warriors would have tattoos to make them appear more threatening and to display their rank status or the tribe they were affiliated with. These designs were deeply tied to their other art forms, as the Maori would get their tattoo designs from woodcarving and other decorative arts.</li>
+  </ul>
+  </section>
+  <!-- Combating Stigmas Section -->
+  <section class="mb-16" data-purpose="combating-stigmas-section">
+  <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8">Combating Stigmas and<br>Stereotypes</h2>
+  <p class="text-base md:text-lg leading-relaxed mb-6">In modern Western society, tattoo culture has had to fight against negative stereotypes to be accepted as a legitimate art form.</p>
+  <ul class="bullet-list text-base md:text-lg leading-relaxed">
+  <li><strong>The Criminal Stereotype:</strong> In the past, many places in New Jersey wanted to block tattoo shops because of the assumption that tattoos belong to criminals.</li>
+  <li><strong>Fighting Back:</strong> Tattoo artist Shotsie Gorman became an activist against these laws, noting that lawmakers associate tattoos ...</li>
+  </ul>
+  </section>
+  </article>
+  </main>
+  <!-- END: MainContent -->
+  </body></html>

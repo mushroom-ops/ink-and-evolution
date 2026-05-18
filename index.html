@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ink &amp; Evolution</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-fonts-and-animations">
+    :root {
+      --bg-dark: #2a2a2a;
+      --text-light: #e0e0e0;
+      --text-muted: #9a9a9a;
+      --accent-taupe: #8c7e73;
+      --btn-bg: #9b9188;
+      --btn-text: #594838;
+      --footer-bg: #5a534c;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .serif-text {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .ticker-wrap {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: content-box;
+    }
+
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker 30s linear infinite;
+    }
+
+    @keyframes ticker {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+
+    .wave-divider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      margin-top: -5%; /* Overlap the hero slightly */
+    }
+
+    .wave-divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: auto;
+    }
+
+    .wave-divider .shape-fill {
+      fill: var(--footer-bg);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- BEGIN: Navigation -->
+<nav class="absolute top-0 w-full z-50 px-8 py-10 lg:px-16" data-purpose="main-navigation">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="text-2xl md:text-3xl font-semibold serif-text text-stone-300 tracking-wide">
+        Ink &amp; Evolution
+      </div>
+<div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
+<a class="text-stone-300 border-b border-stone-300 pb-1 hover:text-white transition-colors duration-300" href="index.html">Home</a>
+<a class="text-stone-400 hover:text-white transition-colors duration-300" href="Evolution.html">Evolution</a>
+<a class="text-stone-400 hover:text-white transition-colors duration-300" href="Culture.html">Culture</a>
+<a class="text-stone-400 hover:text-white transition-colors duration-300" href="Credits.html">Credits</a>
+</div>
+<!-- Mobile menu button (hidden on larger screens) -->
+<button class="md:hidden text-stone-300 focus:outline-none">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<main class="flex-grow flex flex-col lg:flex-row relative z-10 pt-32 lg:pt-0" data-purpose="hero-content">
+<!-- Text Content -->
+<div class="w-full lg:w-1/2 flex items-center justify-center px-8 lg:px-24 py-16 lg:py-0">
+<div class="max-w-xl">
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold serif-text text-stone-300 leading-tight mb-8">
+          Ink &amp; Evolution:<br/>A Tattoo Journey
+        </h1>
+<p class="text-lg md:text-xl text-stone-400 leading-relaxed mb-12 font-light max-w-md">
+          Sacred mark. Sailor tradition. High art. Trace the rebellion, the rebirth, and the ultimate revolution of tattoo culture.
+        </p>
+<button class="px-10 py-4 rounded-full text-sm font-medium tracking-wide transition-all duration-300 hover:opacity-90" style="background-color: var(--btn-bg); color: var(--btn-text);">
+          Start the Journey
+        </button>
+</div>
+</div>
+<!-- Image Content -->
+<div class="w-full lg:w-1/2 flex justify-center items-center lg:items-end p-8 lg:p-0 overflow-hidden lg:h-screen">
+<img alt="Tattoo artist working" class="w-full max-w-2xl lg:max-w-none h-auto lg:h-[85vh] object-cover rounded-md lg:rounded-none lg:rounded-t-3xl shadow-2xl z-20 relative" src="6341ee81da299a7bd173e06ccc51b975.webp" style="object-position: 50% 20%;"/>
+</div>
+</main>
+<!-- END: Hero Section -->
+<!-- BEGIN: Footer Transition Wave -->
+<div class="wave-divider z-30" data-purpose="footer-wave-transition">
+<svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="shape-fill" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.4,130.83,121.73,192.4,103.54,236.4,90.5,279.79,74.1,321.39,56.44Z"></path>
+</svg>
+</div>
+<!-- END: Footer Transition Wave -->
+<!-- BEGIN: Footer Section -->
+<footer class="relative z-40 pb-20 pt-10" data-purpose="main-footer" style="background-color: var(--footer-bg);">
+<!-- Scrolling Ticker -->
+<div class="ticker-wrap border-y border-stone-400/30 py-4 mb-16">
+<div class="ticker-content text-stone-200 font-serif text-2xl tracking-widest font-semibold uppercase">
+<span class="mx-4">CULTURE</span> • <span class="mx-4">EVOLUTION</span> • <span class="mx-4">THOUSANDS OF YEARS</span> • <span class="mx-4">INK</span> • 
+        <span class="mx-4">CULTURE</span> • <span class="mx-4">EVOLUTION</span> • <span class="mx-4">THOUSANDS OF YEARS</span> • <span class="mx-4">INK</span> •
+        <span class="mx-4">CULTURE</span> • <span class="mx-4">EVOLUTION</span> • <span class="mx-4">THOUSANDS OF YEARS</span> • <span class="mx-4">INK</span> •
+      </div>
+</div>
+<!-- Footer Content -->
+<div class="max-w-7xl mx-auto px-8 lg:px-16 flex flex-col md:flex-row justify-between items-end gap-10">
+<!-- Left side: Logo -->
+<div class="w-full md:w-auto">
+<div class="text-4xl md:text-5xl font-bold serif-text text-white tracking-wide mb-2">
+          Ink &amp; Evolution
+        </div>
+</div>
+<!-- Right side: Email -->
+<div class="w-full md:w-auto text-right">
+<a class="text-3xl md:text-4xl lg:text-5xl font-bold serif-text text-white hover:text-stone-300 transition-colors duration-300 break-all" href="mailto:Rowan.2302255@nv.ccsd.net">
+          Rowan.2302255@nv.ccsd.net
+        </a>
+</div>
+</div>
+</footer>
+<!-- END: Footer Section -->
+</body></html>
